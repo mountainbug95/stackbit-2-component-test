@@ -1,0 +1,112 @@
+@import "imports/variables.scss";
+
+
+.hero-primary {
+    display: flex;
+    background-size: cover;
+    box-sizing: border-box;
+    color: white;
+    padding: 0 0 $xxl 0;
+    position: relative;
+    margin-top: 32px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 72px;
+      padding: 0 0 64px 0; 
+    }
+
+    .container {
+        display: flex;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: $tiny;
+    }
+
+    h2 {
+      margin-bottom: $medium;
+    }
+
+    .btn-primary {
+      padding: $small $medium;
+
+      @media screen and (min-width: $tablet) {
+        padding: $small $large;
+      }
+    }
+    .content,
+    .hero-img {
+      @media screen and (min-width: $tablet) {
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+      }
+    }
+
+    .content:nth-child(1n) {
+      margin-right: 30px;
+    }
+
+    .hero-img {
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+        display: initial;
+      }
+
+      text-align: center;
+
+      img, video {
+        border-radius: $borderRadius;
+        box-shadow: $micro $micro 18px 0 rgba(0,0,0,0.06);
+        max-height: 400px;
+        transform:
+          scale(1.6)
+          translateX(40px)
+          translateY(64px)
+          perspective(1230px)
+          rotateY(-34deg)
+          rotateX(1deg)
+          rotate(1deg);
+
+        @media screen and (min-width: $desktop) {
+          transform:
+            scale(1.1)
+            translateX(-$small)
+            translateY(30px)
+            perspective(1230px)
+            rotateY(-34deg)
+            rotateX(1deg)
+            rotate(1deg);
+        }
+      }
+    }
+  }
+
+  .mooseheads {
+    margin-top: $medium;
+
+    .content {
+      max-width: calc(50% - (#{$small} + #{$medium}));
+      position: relative;
+      left: calc(50% + #{$small});
+    }
+
+    p {
+      color: $lighterGrey;
+      lost-utility: clearfix;
+    }
+
+    img {
+      display: block;
+      margin-top: -6px;
+      max-width: 75%;
+      height: auto;
+    }
+
+
+    @media screen and (max-width: $tabletMax) {
+      img {
+        max-width: 100%;
+      }
+    }
+  }

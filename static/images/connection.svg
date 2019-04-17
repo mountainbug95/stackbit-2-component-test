@@ -1,0 +1,39 @@
+
+<svg width="155px" height="166px" viewBox="0 0 155 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0.693359375,0.6796875 L34,0.6796875 C45.045695,0.6796875 54,9.6339925 54,20.6796875 L54,52.7636719" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="53.3066406" height="52.0839844" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="62" cy="62" r="56"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="112" height="112" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <circle id="path-5" cx="62" cy="62" r="37"></circle>
+    </defs>
+    <g id="Import-Marketing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Medium-Import-Landing-v3" transform="translate(-979.000000, -1394.000000)">
+            <g id="how-it-works" transform="translate(231.000000, 1005.000000)">
+                <g id="03-it's-live" transform="translate(656.000000, 383.000000)">
+                    <g id="art" transform="translate(86.000000, 0.000000)">
+                        <g id="mouse" transform="translate(89.000000, 60.000000)">
+                            <use id="Rectangle-5-Copy-2" stroke="#B2DFFE" mask="url(#mask-2)" stroke-width="8" stroke-dasharray="1,2" xlink:href="#path-1"></use>
+                            <rect id="Rectangle-5" stroke="#9EA9FA" stroke-width="4" x="34" y="50" width="36" height="60" rx="18"></rect>
+                            <rect id="Rectangle-5-Copy" stroke="#9EA9FA" stroke-width="3" x="49.5" y="59.5" width="5" height="10" rx="2.5"></rect>
+                        </g>
+                        <g id="Oval-3-Copy-+-Oval-3-Copy-2-+-Oval-3-Copy-3-Mask">
+                            <use id="Mask" stroke="#B2DFFE" mask="url(#mask-4)" stroke-width="22" stroke-dasharray="2,30" transform="translate(62.000000, 62.000000) rotate(-6.000000) translate(-62.000000, -62.000000) " xlink:href="#path-3"></use>
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <circle stroke="#9EA9FA" stroke-width="4" cx="62" cy="62" r="35"></circle>
+                            <ellipse id="Oval-3-Copy" stroke="#9EA9FA" stroke-width="4" mask="url(#mask-6)" cx="62" cy="62" rx="19" ry="35"></ellipse>
+                            <ellipse id="Oval-3-Copy-2" stroke="#9EA9FA" stroke-width="4" mask="url(#mask-6)" transform="translate(62.000000, 32.000000) rotate(90.000000) translate(-32.000000, -32.000000) " cx="62" cy="32" rx="19" ry="35"></ellipse>
+                            <ellipse id="Oval-3-Copy-3" stroke="#9EA9FA" stroke-width="4" mask="url(#mask-6)" transform="translate(62.000000, 92.000000) rotate(90.000000) translate(-92.000000, -92.000000) " cx="62" cy="92" rx="19" ry="35"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+---
+label: Footer
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: copyright
+    label: Copyright
+  - type: field_group_list
+    name: links
+    label: Links
+    config:
+      labelField: title
+    fields:
+      - type: text
+        name: href
+        label: Href
+      - type: text
+        name: title
+        label: Title

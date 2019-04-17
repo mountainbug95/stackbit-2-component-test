@@ -1,0 +1,19 @@
+---
+label: Other Header Options
+hide_body: true
+is_partial: true
+fields:
+  - type: file
+    name: backgroundImage
+    label: Background Image
+    description: The background image displayed in the header
+  - type: boolean
+    name: inversed
+    label: Inversed
+    description: Inverses the header colors
+    default: false
+  - type: boolean
+    name: displayAction
+    label: Display Nav Action
+    description: Displays the action link in the nav
+    default: false

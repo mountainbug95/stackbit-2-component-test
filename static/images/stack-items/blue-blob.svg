@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="185px" viewBox="0 0 220 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>blue-blob</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="landing-v14" transform="translate(-597.000000, -3250.000000)" fill="#3EB0FD">
+            <g id="bottom-cta" transform="translate(40.000000, 3064.000000)">
+                <g id="Group-9" transform="translate(557.000000, 174.000000)">
+                    <path d="M173.162315,26.5545562 C116.022056,7.35990224 33.3221075,0.894721907 44.1268855,46.9684551 C54.9316635,93.0421883 -22.4000668,113.406363 6.51632571,138.350164 C35.4327182,163.293966 84.8173651,129.656331 123.525944,163.696734 C162.234522,197.737137 181.807504,212.551062 204.748579,174.679883 C227.689653,136.808704 230.302574,45.7492102 173.162315,26.5545562 Z" id="blue-blob"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

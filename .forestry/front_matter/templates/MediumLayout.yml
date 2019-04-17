@@ -1,0 +1,84 @@
+---
+label: Medium Landing
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    description: The title of the page
+    config:
+      required: true
+  - type: field_group
+    name: header
+    label: Header
+    description: The header of the page
+    config:
+      required: true
+    fields:
+      - type: include
+        name: include_header
+        label: Header
+        template: header
+  - type: field_group
+    name: hero
+    label: Hero
+    description: The Page hero
+    fields:
+      - type: include
+        name: include_hero
+        label: Medium Hero
+        template: hero
+  - type: field_group
+    name: features
+    label: Features
+    description: The page features section
+    fields:
+      - type: include
+        name: include_features
+        label: Features Section
+        template: features
+  - type: field_group
+    name: videoSection
+    label: Video Section
+    description: A section that displays an embedded video
+    fields:
+      - type: include
+        name: include_videoSection
+        label: Video Section
+        template: videoSection
+  - type: field_group
+    name: genericSection
+    label: Generic Section
+    description: A generic Section
+    fields:
+      - type: include
+        name: include_genericSection
+        label: Generic Section
+        template: genericSection
+  - type: field_group
+    name: openFile
+    label: Open File Section
+    description: The open file section
+    fields:
+      - type: include
+        name: include_openFile
+        label: Open File Section
+        template: openFile
+  - type: field_group
+    name: footer
+    label: Footer
+    description: The page footer
+    fields:
+      - type: include
+        name: include_footer
+        label: Footer
+        template: footer
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: MediumLayout
+    config:
+      required: true
+pages:
+  - src/pages/medium.md

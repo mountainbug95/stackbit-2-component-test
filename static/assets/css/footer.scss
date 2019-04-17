@@ -1,0 +1,79 @@
+@import "imports/variables.scss";
+
+
+.footer {
+    background: white url(../../images/footer/footer-bg.png) top center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: $xxl 0 $small 6px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-top: 0;
+    position: relative;
+  
+    @media screen and (min-width: $tablet) {
+      text-align: center;
+    }
+  
+    .container {
+      position: relative;
+    }
+  
+    .footer-logo,
+    .social-links {
+      @media screen and (min-width: $tablet) {
+        position: absolute;
+      }
+    }
+  
+    .footer-logo {
+      display: block;
+      margin-bottom: $micro;
+  
+      @media screen and (min-width: $tablet) {
+        display: inline-block;
+        margin-bottom: 0;
+        top: -2px;
+        left: $small;
+      }
+    }
+  
+    .copyright {
+      color: $lightestGrey;
+      font-size: 13px;
+      line-height: $small;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: #1e90ff;
+      }
+    }
+  
+    .social-links {
+      float: right;
+      margin-top: -$xl;
+  
+      @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        float: none;
+        top: -58px;
+        right: $small;
+      }
+  
+      a {
+        padding: 6px;
+  
+        path {
+          transition: fill .2s linear;
+        }
+  
+        &:hover {
+          path {
+            fill: $blue;
+          }
+        }
+      }
+    }
+  }
+  

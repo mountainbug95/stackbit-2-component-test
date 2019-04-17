@@ -1,0 +1,42 @@
+---
+label: Video Section
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: videoSection
+    config:
+      required: true
+  - type: text
+    name: heading
+    label: Video Heading
+    description: The text displayed above the video
+  - type: text
+    name: URL
+    label: Video URL
+    description: The URL of the video you want to embed
+    config:
+      required: true
+  - type: field_group_list
+    name: directions
+    label: Directions
+    description: A list of directions to display beside the video
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Direction Text
+        description: The text displayed for the direction
+        config:
+          required: true
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: videoSection

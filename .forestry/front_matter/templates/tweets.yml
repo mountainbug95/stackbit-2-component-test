@@ -1,0 +1,36 @@
+---
+label: Tweets Section
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: tweets
+    config:
+      required: true
+  - type: text
+    name: heading
+    label: Section Heading
+    description: The text displayed at the top of the section
+    config:
+      required: true
+  - type: field_group_list
+    name: tweets_carousel
+    label: Tweets Carousel
+    description: A list of code segments to embed tweets into the tweets carousel
+    config:
+      labelField: embed
+    fields:
+      - type: text
+        name: embed
+        label: Embed
+        description: 'note: leave the script element off the end of the tweet embed'
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: tweets

@@ -1,0 +1,25 @@
+.hero-ofd{
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 6;
+}
+
+@media (max-width: 1260px) {
+    .hero-ofd{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 760px) {
+    .fd-cta{
+        margin-top: 12em;
+    }
+}
+
+.hero-ofd ol hr{
+    border-width: 1px;
+    border-style: solid;
+    max-width: 100%;
+    border-color: #F2F3F5;
+}

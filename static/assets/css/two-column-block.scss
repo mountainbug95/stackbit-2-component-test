@@ -1,0 +1,31 @@
+@import "imports/variables.scss";
+
+.two-column-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .half {
+        flex-basis: 100%;
+        margin-top: $small;
+
+        @media screen and (min-width: $desktop) {
+            flex: 1;
+
+            &:nth-child(odd) {
+                padding-right: $small;
+                margin-right: $small;
+            }
+
+            &:nth-child(even) {
+                padding-left: $small;
+            }
+        }
+
+        p {
+            color: $lightGrey;
+            font-weight: $light;
+            line-height: 32px;
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@import "imports/variables.scss";
+
+.header {
+    position: relative;
+    width: 100%;
+  
+    .container {
+      padding: 0;
+    }
+  
+    .stackbit-logo {
+      float: left;
+    }
+  
+    .background-image {
+      position: absolute;
+      width: 100%;
+      max-height: 660px;
+      z-index: -1;
+      overflow: hidden;
+      
+      img {
+        max-height: 660px;
+        min-width: 100%;
+      }
+    }
+
+    &:not(.inversed) {
+      .background-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      .background-image {
+        max-height: 700px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      .background-image {
+        max-height: 660px;
+      }
+    }
+
+    nav:before {
+      content: '';
+      display: table;
+    }
+
+    nav:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  
+    nav {
+      text-align: right;
+      border-bottom: 1px solid rgba(62,178,253,0.2);
+      padding: $small 0 calc(#{$small} - 4px);
+      margin: 0 $tiny;
+  
+      @media screen and (min-width: $mobile) {
+        margin: 0 $small;
+      }
+  
+      @media screen and (max-width: $tabletMax) {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+      }
+  
+      .stackbit-logo {
+        @media screen and (max-width: $tabletMax) {
+          order: 1;
+        }
+      }
+  
+      .text-link {
+        color: $navy;
+        opacity: 0.7;
+        position: relative;
+        vertical-align: middle;
+        transition: all .2s ease;
+  
+        &:not(.with-arrow) {
+          font-weight: $light;
+          opacity: .7;
+          margin: $tiny;
+          order: 2;
+  
+          @media screen and (max-width: $tabletMax) {
+            margin: 0;
+            padding: 12px 0 $micro 0;
+            width: calc(100% - 303px);
+  
+            &.scrolling {
+              display: none;
+            }
+          }
+  
+          @media screen and (max-width: $mobileMax) {
+            width: calc(100% - 229px);
+            order: 3;
+            text-align: center;
+          }
+        }
+  
+        &:hover,
+        &.with-arrow,
+        &.active {
+          color: $blue;
+          opacity: 1;
+        }
+  
+        &.active:before {
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: $blue;
+          position: absolute;
+          bottom: -27px;
+  
+          @media screen and (max-width: $tabletMax) {
+            bottom: -21px;
+          }
+        }
+  
+        &.with-arrow {
+          margin-left: $small;
+          padding: 6px 26px $micro 0;
+          order: 3;
+  
+          @media screen and (max-width: $mobileMax) {
+            margin-left: $tiny;
+            order: 2;
+  
+            span {
+              display: none;
+            }
+          }
+  
+          @media screen and (max-width: $tabletMax) {
+            margin-right: -2px;
+          }
+        }
+      }
+    }
+
+    a {
+      &.with-arrow {
+        padding-right: 32px;
+        background: url(../../images/header/right-arrow.svg) no-repeat right center;
+      }
+    }
+
+    &:not(.inversed) .with-arrow {
+      background: url(../../images/header/right-arrow-blue.svg) no-repeat calc(100%) calc(50%);
+    }
+  
+    &.inversed {
+      nav {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+  
+      .text-link {
+        color: white;
+        opacity: 1;
+  
+        &.with-arrow {
+          color: white;
+        }
+      }
+    }
+}
+  

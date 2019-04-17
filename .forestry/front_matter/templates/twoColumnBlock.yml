@@ -1,0 +1,39 @@
+---
+label: TwoColumnBlock
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: twoColumnBlock
+    config:
+      required: true
+  - type: field_group
+    name: column1
+    label: column1
+    fields:
+      - type: text
+        name: title
+        label: Title
+      - type: text
+        name: text
+        label: Text
+  - type: field_group
+    name: column2
+    label: column2
+    fields:
+      - type: text
+        name: title
+        label: Title
+      - type: text
+        name: text
+        label: Text
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: twoColumnBlock

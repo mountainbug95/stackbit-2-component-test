@@ -1,0 +1,84 @@
+---
+label: Stack items
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: stackItems
+    config:
+      required: true
+  - type: field_group
+    name: themeLayer
+    label: Theme Layer
+    fields:
+      - type: include
+        name: include_stackLayer
+        label: Stack layer
+        template: stackLayer
+  - type: field_group
+    name: genLayer
+    label: Gen Layer
+    fields:
+      - type: include
+        name: include_stackLayer
+        label: Stack layer
+        template: stackLayer
+  - type: field_group
+    name: deploymentLayer
+    label: Deployment Layer
+    fields:
+      - type: include
+        name: include_stackLayer
+        label: Stack layer
+        template: stackLayer
+  - type: field_group
+    name: cmsLayer
+    label: Cms Layer
+    fields:
+      - type: include
+        name: include_stackLayer
+        label: Stack layer
+        template: stackLayer
+  - type: field_group
+    name: ctaLayer
+    label: Cta Layer
+    fields:
+      - type: text
+        name: quote
+        label: Quote
+        config:
+          required: true
+      - type: file
+        name: image
+        label: Image
+      - type: text
+        name: name
+        label: Name
+      - type: text
+        name: linkHref
+        label: Link href
+      - type: text
+        name: linkTitle
+        label: Link title
+      - type: text
+        name: title
+        label: Title
+      - type: text
+        name: subtitle
+        label: Subtitle
+      - type: text
+        name: buttonHref
+        label: button href
+      - type: text
+        name: buttonTitle
+        label: button title
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: stackItems

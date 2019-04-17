@@ -1,0 +1,154 @@
+
+html,
+body,
+section {
+  margin: 0;
+  padding: 0;
+  font-family: $circular;
+  font-size: $tiny;
+  color: $navy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav {
+  padding: $small;
+
+  img {
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+}
+
+.clearfix {
+  lost-utility: clearfix;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: $regular;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $medium;
+    line-height: 46px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: $regular;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $small;
+    line-height: 32px;
+  }
+
+  .accent {
+    font-size: 28px;
+    font-weight: $regular;
+    line-height: 32px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: $medium;
+      font-weight: $regular;
+      line-height: 46px;
+    }
+  }
+}
+
+h4 {
+  font-size: 24px;
+  color: $navy;
+  position: relative;
+  padding-bottom: $tiny;
+  margin: 0;
+
+  &.section-label:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background: $purple;
+    height: 4px;
+    width: $medium;
+    opacity: .2;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: $tiny;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background: white;
+  box-shadow: 1px 2px $micro 0 rgba(3,30,52,0.10);
+  border-radius: $smallBorderRadius;
+  cursor: pointer;
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: 1px 2px $micro 0 rgba(3,30,52,0.20);
+  }
+}
+
+.tags {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 41px;
+
+  &:before {
+    content: 'Tags: ';
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: $bold;
+    color: $navy;
+    margin-right: $micro;
+    margin-left: -41px;
+  }
+
+  li {
+    display: inline;
+  }
+}
+
+.tag,
+.tag:visited {
+  background: $blue;
+  border-radius: 999px;
+  color: white;
+  display: inline-block;
+  font-weight: $bold;
+  font-size: 12px;
+  line-height: 11px;
+  padding: 6px $tiny 7px $tiny;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  letter-spacing: 1.33px;
+  text-transform: uppercase;
+}
+
+p + pre {
+  margin-top: calc(-#{$small} - #{$micro});
+}
+
+.hljs {
+  border-radius: $smallBorderRadius;
+  font-size: $tiny;
+  padding: $small !important;
+}

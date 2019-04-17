@@ -1,0 +1,18 @@
+---
+label: blogLayout
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: BlogLayout
+    config:
+      required: true
+pages:
+  - src/pages/blog.md

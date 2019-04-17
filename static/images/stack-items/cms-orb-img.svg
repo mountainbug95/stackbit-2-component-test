@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="117px" viewBox="0 0 101 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>cms-orb-img</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M36.7832082,34.0833242 C52.2322147,21.1095735 52.721149,10.7680336 103.435784,32.8664675 C154.15042,54.9649014 130.507002,156.744026 69.8451424,128.517951 C9.18328305,100.291876 21.3342017,47.0570749 36.7832082,34.0833242 Z" id="path-1"></path>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-v14" transform="translate(-1186.000000, -2020.000000)">
+            <g id="03-cms" transform="translate(40.000000, 1817.000000)">
+                <g id="art" transform="translate(881.000000, 76.000000)">
+                    <g id="cms-orb-img" transform="translate(236.000000, 109.000000)">
+                        <g id="Group-4">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#20C778" opacity="0.900000036" transform="translate(77.649270, 76.703155) rotate(55.000000) translate(-77.649270, -76.703155) " xlink:href="#path-1"></use>
+                            <g mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                                <g transform="translate(45.000000, 56.000000)">
+                                    <path d="M63.4666667,0 L0.533333333,0 L0.533333333,40.3809524 L63.5428571,40.3809524 L63.5428571,0 L63.4666667,0 Z M60.4190476,37.3333333 L51.6571429,37.3333333 L37.6380952,25.447619 L33.2952381,28.952381 L21.4857143,16.3809524 L3.58095238,37.2571429 L3.58095238,3.04761905 L60.4952381,3.04761905 L60.4952381,37.3333333 L60.4190476,37.3333333 Z" id="Shape"></path>
+                                    <circle id="Oval" cx="49.447619" cy="13.7142857" r="4.95238095"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

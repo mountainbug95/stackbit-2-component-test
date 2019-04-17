@@ -1,0 +1,147 @@
+@import "imports/variables.scss";
+
+.login-page {
+    background: $navy url(../../images/bg.svg) no-repeat right bottom;
+    color: #ffffff;
+
+    .navbar {
+        background: none;
+        box-shadow: none;
+
+        .header-user {
+            display: none;
+        }
+
+        .login-type {
+            padding: 0 40px;
+            font-size: 16px;
+            text-align: right;
+            color: rgba(#ffffff, 0.7);
+
+            a {
+                font-weight: bold;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        font-weight: normal;
+        margin: 0 0 30px;
+    }
+
+    .login-column {
+        width: 320px;
+        margin: 40px auto;
+    }
+
+    .separator {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 25px;
+
+        span {
+            font-size: 12px;
+            color: rgba(#ffffff, 0.5);
+            padding: 0 10px;
+        }
+
+        &:before, &:after {
+            content: " ";
+            flex: 1;
+            height: 1px;
+            top: 50%;
+            background: rgba(#ffffff, 0.1);
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .login-button {
+        width: 100%;
+        svg {
+            vertical-align: sub;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-field {
+        flex: 1;
+        margin: 0 0 32px;
+        color: rgba(#ffffff, 0.5);
+
+        &:focus-within {
+            color: $dodger-blue;
+            input {
+                border-bottom-color: $dodger-blue;
+            }
+        }
+
+        &.terms {
+            flex-direction: row;
+            color: #ffffff;
+            font-size: 12px;
+            a {
+                text-decoration: none;
+            }
+            input {
+                width: auto;
+            }
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        input {
+            width: 100%;
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 0;
+            border-bottom: 1px solid rgba(#ffffff, 0.5);
+            padding-bottom: 5px;
+            color: #ffffff;
+        }
+        .sub-field {
+            display: block;
+            padding: 1px 0 0;
+            min-height: 22px;
+            font-size: 12px;
+            color: inherit;
+        }
+
+        .forgot-password {
+            display: block;
+            color: inherit;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        .cta-button {
+            width: 100%;
+        }
+    }
+
+    .error-message {
+        display: block;
+        color: $tomato;
+        font-style: italic;
+        margin-top: 5px;
+        //@include ellipsis();
+    }
+}

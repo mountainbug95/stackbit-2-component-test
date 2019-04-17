@@ -1,0 +1,52 @@
+@import "imports/variables.scss";
+
+.banner {
+    background: $blue;
+    text-align: center;
+    padding: $large 0;
+    margin: $large 0;
+
+    h2, h3 {
+      color: white;
+    }
+
+    h2 {
+      display: block;
+      width: 100%;
+      max-width: $tablet;
+      margin: 0 auto $medium auto;
+    }
+
+    .info {
+      width: 100%;
+      margin: 0 !important;
+    }
+
+    h3 span {
+      font-size: 12px;
+      font-style: italic;
+      display: block;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: $large;
+
+        .item {
+            flex: 1;
+        }
+    }
+
+    @media screen and (max-width: $tablet) {
+      .items {
+        margin-top: $medium;
+
+        .item {
+          margin-top: $medium;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }

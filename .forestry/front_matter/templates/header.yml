@@ -1,0 +1,27 @@
+---
+label: Header
+hide_body: true
+is_partial: true
+fields:
+  - type: field_group_list
+    name: navItems
+    label: NavItems
+    config:
+      labelField: title
+    fields:
+      - type: text
+        name: href
+        label: Href
+      - type: text
+        name: title
+        label: Title
+  - type: field_group
+    name: actionItem
+    label: ActionItem
+    fields:
+      - type: text
+        name: href
+        label: Href
+      - type: text
+        name: title
+        label: Title

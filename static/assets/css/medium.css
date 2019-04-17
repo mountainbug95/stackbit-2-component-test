@@ -1,0 +1,32 @@
+.medium {
+
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+            monospace;
+    }
+
+
+    .outer{
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    @media (max-width: 1260px) {
+        .outer{
+            text-align: left;
+        }
+    }
+
+    .underline{
+        border-width: 3px;
+        border-style: solid;
+        border-color: #EEF0FF;
+        width: 50px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,159 @@
+@import "imports/variables.scss";
+
+
+.jobs-detail {
+
+    .container.s-page {
+        max-width: 768px;
+        z-index: 10;
+    }
+
+    .cta {
+        max-width: 400px;    
+        margin-top: $xl;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+    }
+
+    .footer {
+        @media screen and (min-width: $desktop) {
+            padding-top: $large;
+        }
+    }
+
+    .share {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+
+        div {
+            margin-left: 8px;
+        }
+        
+        .label {
+          display: inline-block;
+          opacity: 0.5;
+          font-size: 12px;
+          font-weight: $bold;
+          color: $navy;
+          margin-right: $micro;
+          transform: translateY(-2px);    
+          align-self: center;
+        }
+    }
+
+
+    h2,
+    h3,
+    strong {
+      font-weight: $bold;
+    }
+
+    h1,
+    h3,
+    p {
+      + ul,
+      + ol {
+        margin-top: -$medium;
+
+        + p {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    h1 {
+      font-size: $small;
+      margin: $small 0;
+
+    }
+
+    h2 {
+      font-weight: $bold;
+      font-size: 20px;
+      margin: 0 0 $small 0;
+    }
+
+    h3 {
+      margin: 0 0 $small 0;
+    }
+
+    p,
+    ul,
+    ol {
+      font-size: $tiny;
+      font-weight: $light;
+      color: $grey;
+      line-height: $medium;
+      margin-bottom: calc(#{$small} * 2);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+        padding: 0 0 0 $medium;
+
+        + .centered-text {
+            margin-top: $large;
+        }
+
+        + h2 {
+            margin-top: $medium;
+        }
+    }
+
+    .details {
+        margin-top: $small;
+
+        .text-link.with-arrow {
+            position: relative;
+            margin-bottom: $micro;
+            color: $blue;
+            padding-left: 32px;
+
+            &:after {        
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: url(../../images/header/right-arrow-blue.svg) no-repeat;
+                background-position-x: calc(100% - 2px);
+                background-position-y: 50%;
+                transform: scaleX(-1);
+                transition: background-position .2s linear;
+            }
+
+            &:hover {
+                &:after {
+                  background-position: 100% center;
+                }
+            }
+          }
+
+          h1 {
+              font-size: $medium;
+              margin-bottom: $tiny;
+          }
+      
+          h3 {
+            color: $lightGrey;
+            margin-top: 0;
+            font-weight: $light;
+            font-size: $tiny;
+          }
+    }
+}

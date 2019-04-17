@@ -1,0 +1,82 @@
+@import "imports/variables.scss";
+
+.jobs {
+
+    a {
+        color: $blue;
+    }
+    
+    .passive-cta {
+        margin-top: $tiny;
+        color: $lightGrey;
+        font-size: 12px;
+        font-weight: $light;
+    }
+
+    .job-list {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        padding: $small;
+        border-radius: $borderRadius;
+        margin: $small 0;
+        color: $navy;
+        box-sizing: border-box;
+        border: 1px solid $blue;
+        position: relative;
+        transition: transform .2s;
+
+        &:not(:last-child) {
+          margin-bottom: $micro;
+        }
+
+        &:after, &:before {
+          left: calc(100% - #{$tiny} - #{$small});
+          top: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          transition: left .2s;
+        }
+
+        &:after {
+          border-color: transparent;
+          border-left-color: white;
+          border-width: $tiny;
+          margin-top: -$tiny;
+        }
+
+        &:before {
+          border-color: transparent;
+          border-left-color: $blue;
+          border-width: 18px;
+          margin-top: -18px;
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+
+          &:after,
+          &:before {
+            left: calc(100% - #{$tiny} - #{$small} - #{$micro});
+          }
+        }
+
+        h3 {
+          margin: 0 0 $micro 0;
+        }
+
+        h3,
+        p {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: calc(100% - (#{$small} * 2));
+          overflow: hidden;
+        }
+      }
+    }
+}

@@ -1,0 +1,45 @@
+---
+label: Hero Header With Image
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: heroPrimary
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Title
+    description: The title of the hero
+    config:
+      required: true
+  - type: text
+    name: subtitle
+    label: Subtitle
+    description: The subtitle of the hero
+  - type: text
+    name: buttonHref
+    label: ButtonHref
+    description: The href for the button
+  - type: text
+    name: buttonTitle
+    label: ButtonTitle
+    description: The title for the button
+  - type: text
+    name: imageSectionTitle
+    label: Image section title
+    description: The image section title
+  - type: text
+    name: imageSectionImage
+    label: Image section image
+    description: The image section image
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: heroPrimary

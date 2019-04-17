@@ -1,0 +1,31 @@
+---
+label: Stack layer
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the hero
+    config:
+      required: true
+  - type: text
+    name: subtitle
+    label: Subtitle
+    description: The subtitle of the hero
+  - type: text
+    name: description
+    label: Description
+    description: The description for the hero
+  - type: file
+    name: icon
+    label: Icon
+    description: The icon for the hero
+  - type: text
+    name: buttonHref
+    label: ButtonHref
+    description: The href for the button
+  - type: text
+    name: buttonTitle
+    label: ButtonTitle
+    description: The title for the button

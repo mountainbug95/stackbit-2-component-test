@@ -1,0 +1,120 @@
+.beta-application.page .footer {
+    @media screen and (min-width: $tablet) and (min-height: 850px) {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.contact {
+    background: url(/img/landing/hero-bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    text-align: center;
+    padding: $xl 0;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $display) {
+        background-position: left bottom;
+        background-size: 3000px;
+    }
+
+    @media screen and (min-width: 1800px) {
+        background-size: cover;
+        background-position: top center;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: $medium;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: $medium;
+        }
+    }
+
+    form {
+
+        @media screen and (min-width: $tablet) {
+            lost-column: 3/4;
+            lost-offset: 1/8;
+        }
+
+        @media screen and (min-width: $desktop) {
+            lost-column: 1/2;
+            lost-offset: 1/4;
+            position: absolute;
+            left: 0;
+            margin-top: 150px;
+            z-index: 10;
+        }
+
+        input,
+        textarea {
+            padding: $tiny;
+            background: transparent;
+            outline: none;
+            box-shadow: none !important;
+            border-radius: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            border: 4px solid white;
+            color: white;
+            font-weight: $bold;
+            font-size: $tiny;
+            line-height: 18px;
+            margin-bottom: $small;
+            clear: none !important;
+            transition: border-color .2s linear;
+
+            &::placeholder {
+                color: white;
+                font-weight: $bold;
+                font-size: $tiny;
+                line-height: 18px;
+            }
+
+            &:focus {
+                border-color: $blue;
+            }
+
+            &[type='hidden'] {
+                display: none;
+            }
+        }
+
+        input {
+            width: 100%;
+
+            @media screen and (min-width: $tablet) {
+                padding: 19px $tiny;
+                lost-column: 1/2;
+            }
+
+            @media screen and (min-width: $desktop) {
+                color: $navy;
+                border-color: $navy;
+
+                &::placeholder {
+                    color: $navy;
+                }
+            }
+
+            &:first-child {
+                transform: translateX(1px);
+            }
+        }
+
+        .btn-primary {
+            box-sizing: border-box;
+            width: 100%;
+
+            @media screen and (min-width: $tablet) {
+                lost-column: 1/2;
+            }
+        }
+    }
+
+    + .footer {
+        clear: both;
+        margin-top: 1px;
+    }
+}

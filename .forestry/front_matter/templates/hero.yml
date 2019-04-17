@@ -1,0 +1,81 @@
+---
+label: Medium Hero
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: hero
+    config:
+      required: true
+  - type: text
+    name: heading
+    label: Heading
+    description: The heading displayed at the top of the hero
+    config:
+      required: true
+  - type: text
+    name: subheading
+    label: Subheading
+    description: The text displayed below the hero heading
+  - type: field_group
+    name: contact
+    label: Contact Section
+    fields:
+      - type: text
+        name: text
+        label: Contact Text
+      - type: field_group
+        name: link
+        label: Contact Link
+        description: The link for contacting
+        fields:
+          - type: text
+            name: text
+            label: Link Text
+            description: The text displayed in the link
+            config:
+              required: true
+          - type: text
+            name: url
+            label: URL
+            config:
+              required: true
+  - type: boolean
+    name: displayImage
+    label: Display Contact Image
+    description: Displays the contact image
+    default: false
+  - type: field_group
+    name: tweets
+    label: Tweets Section
+    fields:
+      - type: include
+        name: include_tweets
+        label: Tweets Section
+        template: tweets
+  - type: field_group
+    name: openFile
+    label: Open File Section
+    fields:
+      - type: include
+        name: include_openFile
+        label: Open File Section
+        template: openFile
+  - type: field_group
+    name: checklist
+    label: Checklist Section
+    fields:
+      - type: include
+        name: include_checklist
+        label: Checklist Section
+        template: checklist
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: hero

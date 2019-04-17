@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400i|Roboto+Mono');
+
+.post-outer{
+    max-width: 90vw;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .hero-image{
+        order: 1;
+        display: inline-block;
+
+        .thumbnail{
+            display: inline-block;
+            max-width: 350px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px lightgrey;
+        }
+    }
+
+    .info{
+        order: 2;
+        display: inline-block;
+
+        h1{
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+
+        .hero-image{
+            display: block;
+            min-width: 100%;
+
+            .thumbnail{
+                min-width: 100%;
+            }
+        }
+
+        .info{
+            display: block;
+            text-align: left;
+
+            h1{
+                margin-top: 50px;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                font-size: 28px;
+            }
+        }
+    }
+
+    h1{
+        display: inline-block;
+        margin: 75px;
+    }
+}
+
+.content{
+    .container{
+        max-width: 750px;
+
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            color: #133344;
+            line-height: 40px;
+        }
+
+        a{
+            border-bottom: 2px solid;
+        }
+
+        code{
+            display: block;
+            margin-top: 75px;
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+
+        ol{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            li{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        table{
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: 100%;
+
+            tbody{
+                max-width: 100%;;
+
+                tr{
+                    max-width: 100%;
+                }
+
+                @media screen and (max-width: 768px) {
+
+                    td{
+                        max-width: 33.3%;
+                        font-size: 2vw;
+                    }
+                }
+
+            }
+
+            th, td{
+                font-size: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: 1px solid lightgrey;
+            }
+        }
+    }
+}

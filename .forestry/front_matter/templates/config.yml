@@ -1,0 +1,23 @@
+---
+label: Global Site Config
+hide_body: true
+is_partial: false
+fields:
+  - type: field_group
+    name: header
+    label: Site Header
+    description: The header displayed at the top of a page
+    fields:
+      - type: include
+        name: include_header
+        label: Header
+        template: header
+  - type: field_group
+    name: footer
+    label: Site Footer
+    description: The footer displayed at the bottom of a page
+    fields:
+      - type: include
+        name: include_footer
+        label: Footer
+        template: footer

@@ -1,0 +1,37 @@
+{
+    "header": {
+        "content": "Stackbit Vanilla",
+        "has_nav": true,
+        "navItems": [
+            {
+                "href": "https://app.stackbit.com/",
+                "title": "Log In"
+            }
+        ],
+        "actionItem": {
+            "href": "/beta/",
+            "title": "Join the Beta"
+        }
+    },
+    "footer": {
+        "copyright": "Copyright © 2018 Stackbit",
+        "links": [
+            {
+                "href": "/jobs",
+                "title": "Jobs"
+            },
+            {
+                "href": "/tos",
+                "title": "Terms"
+            },
+            {
+                "href": "/license",
+                "title": "License"
+            },
+            {
+                "href": "/privacy",
+                "title": "Privacy"
+            }
+        ]
+    }
+}

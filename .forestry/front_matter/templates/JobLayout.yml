@@ -1,0 +1,26 @@
+---
+label: JobLayout
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Job Title
+    description: The title of the page
+    config:
+      required: true
+  - type: text
+    name: location
+    label: Job Location
+    description: The location of the job
+  - type: text
+    name: experienceLevel
+    label: Experience Level
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: JobLayout
+    config:
+      required: true
+pages:
+  - src/pages/jobs/full-stack-dev.md

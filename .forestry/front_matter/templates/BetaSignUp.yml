@@ -1,0 +1,28 @@
+---
+label: BetaSignUp
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    description: The title of the page
+    config:
+      required: true
+  - type: field_group
+    name: header
+    label: Other Header Options
+    description: Some non global options for changing the page header.
+    fields:
+      - type: include
+        name: include_headerMisc
+        label: Other Header Options
+        template: headerMisc
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: BetaSignUp
+    config:
+      required: true
+pages:
+  - src/pages/beta.md

@@ -1,0 +1,105 @@
+button,
+button:focus,
+button:visited {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+
+
+[class^="btn"] {
+  border-radius: 100px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: $tiny;
+  text-decoration: none;
+  padding: $small $medium;
+  font-weight: $bold;
+  font-size: $tiny;
+  letter-spacing: 1.33px;
+  text-transform: uppercase;
+
+  &.small {
+    padding: 10px $tiny;
+  }
+
+  &.with-arrow {
+    padding: $small;
+
+    .svg {
+      padding-left: 6px;
+      transition: transform .2s linear;
+
+      path {
+        transition: fill .2s linear;
+      }
+    }
+
+    &:hover {
+      color: white;
+
+      .svg {
+        transform: translateX(2px);
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  &.btn-primary {
+    background: $blue;
+    background-image: linear-gradient(1deg, #4F58FD 0%, #149BF3 99%);
+    backgroun-position: 0 0;
+    background-size: calc(100% + #{$medium}) calc(100% + #{$medium});
+    color: white;
+    transition: background-position .2s;
+    padding: $small;
+
+    @media screen and (min-width: $mobile) {
+      padding: $small $medium;
+    }
+
+    &:hover {    
+      color: white;
+      background-position: -$medium -$medium;
+    }
+      &:visited{
+          color: white;
+      }
+  }
+
+  &.btn-secondary {
+    border: 2px solid $darkBlue;
+    color: $darkBlue;
+    font-weight: $bold;
+    transition: background .2s linear, color .2s linear;
+
+    &:hover {
+      background: $darkBlue;
+      color: white;
+    }
+
+    &.knockout {
+      color: white;
+      border-color: white;
+
+      &:hover {
+        background: white;
+        color: $darkBlue;
+      }
+    }
+  }
+}

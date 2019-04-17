@@ -1,0 +1,647 @@
+ssgName: gatsby
+buildCommand: "./build.sh"
+uploadDir: "images"
+collections:
+  - label: Pages
+    source: pages
+    create: true
+    models:
+      - MediumLayout
+      - containerLayout
+      - singleColumnLayout
+      - BetaSignUp
+      - JobLayout
+models:
+  config:
+    type: config
+    label: Global Site Config
+    hideContent: true
+    singleInstance: true
+    fields:
+      - type: header
+        name: header
+        label: Site Header
+        description: The header displayed at the top of a page
+      - type: footer
+        name: footer
+        label: Site Footer
+        description: The footer displayed at the bottom of a page
+  MediumLayout:
+    type: page
+    label: Medium Landing
+    template: MediumLayout
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+        description: The title of the page
+      - type: header
+        name: header
+        label: Header
+        description: The header of the page
+        required: true
+      - type: hero
+        name: hero
+        label: Hero
+        description: The Page hero
+      - type: features
+        name: features
+        label: Features
+        description: The page features section
+      - type: videoSection
+        name: videoSection
+        label: Video Section
+        description: A section that displays an embedded video
+      - type: genericSection
+        name: genericSection
+        label: Generic Section
+        description: A generic Section
+      - type: openFile
+        name: openFile
+        label: Open File Section
+        description: The open file section
+      - type: footer
+        name: footer
+        label: Footer
+        description: The page footer
+  containerLayout:
+    type: page
+    label: containerLayout
+    template: ContainerLayout
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+        description: The title of the page
+      - type: headerMisc
+        name: header
+        label: Other Header Options
+        description: Some non global options for changing the page header.
+      - type: list
+        name: sections
+        label: Sections
+        description: Home sections
+        items:
+          type: reference
+          labelField: title
+          models: [heroPrimary, stackItems, banner, twoColumnBlock, titleBlock, actionTitleBlock, jobs, hero, openFile, checklist, tweets, features, videoSection, genericSection]
+  singleColumnLayout:
+    type: page
+    label: singleColumnLayout
+    template: SingleColumnLayout
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+        description: The title of the page
+      - type: headerMisc
+        name: header
+        label: Other Header Options
+        description: Some non global options for changing the page header.
+      - type: list
+        name: sections
+        label: Sections
+        description: Home sections
+        items:
+          type: reference
+          labelField: title
+          models: [heroPrimary, stackItems, banner, twoColumnBlock, titleBlock, actionTitleBlock, jobs, hero, openFile, checklist, tweets, features, videoSection, genericSection]
+  BetaSignUp:
+    type: page
+    label: BetaSignUp
+    template: BetaSignUp
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+        description: The title of the page
+      - type: headerMisc
+        name: header
+        label: Other Header Options
+        description: Some non global options for changing the page header.
+  JobLayout:
+    type: page
+    label: JobLayout
+    template: JobLayout
+    fields:
+      - type: string
+        name: title
+        label: Job Title
+        required: true
+        description: The title of the page
+      - type: string
+        name: location
+        label: Job Location
+        description: The location of the job
+      - type: string
+        name: experienceLevel
+        label: Experience Level
+        descriptiopn: The level of experience required for the job
+  BlogLayout:
+    type: page
+    label: blogLayout
+    template: BlogLayout
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+  BlogPostLayout:
+    type: page
+    label: blogPostLayout
+    template: BlogPostLayout
+    fields:
+      - type: string
+        name: title
+        label: Post Title
+        required: true
+      - type: text
+        name: excerpt
+        label: Post Excerpt
+        description: An excerpt of the post, displayed on the post thumbnail
+      - type: image
+        name: thumbnail
+        label: Post Thumbnail Image
+        description: The image displayed in the post thumbnail
+      - type: number
+        name: readTimeMins
+        label: Estimated Read Time
+        required: true
+        description: The estimated titme (in minutes) it will take toread the post.
+  genericSection:
+    type: object
+    label: Generic Section
+    description: A generic Section
+    component: GenericSection
+    fields:
+      - type: string
+        name: heading
+        label: Section Heading
+        description: The large text displayed at the top of the section
+        required: true
+      - type: string
+        name: subheading
+        label: Section Subheading
+        description: The smaller text displayed below the section heading
+      - type: markdown
+        name: content
+        label: Section Content
+        description: The markdown content displayed below the section subheading
+  videoSection:
+    type: object
+    label: Video Section
+    description: A section that displays an embedded video
+    component: VideoSection
+    fields:
+      - type: string
+        name: heading
+        label: Video Heading
+        description: The text displayed above the video
+      - type: string
+        name: URL
+        label: Video URL
+        description: The URL of the video you want to embed
+        required: true
+      - type: list
+        name: directions
+        label: Directions
+        description: A list of directions to display beside the video
+        items:
+          type: object
+          label: Direction
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Direction Text
+              description: The text displayed for the direction
+              required: true
+  features:
+    type: object
+    label: Features Section
+    description: Displays a list of features
+    component: Features
+    fields:
+      - type: string
+        name: heading
+        label: Section Heading
+        description: The large text displayed above the section content
+        required: true
+      - type: string
+        name: subheading
+        label: Section Subheading
+        description: The smaller text displayed above the section heading
+      - type: markdown
+        name: content
+        label: Section Content
+        description: The content text displayed below the section heading
+      - type: list
+        name: featuresList
+        label: Features List
+        required: true
+        description: The list of features displayed at the bottom of the section
+        items:
+          type: object
+          label: Feature
+          labelField: title
+          fields:
+            - type: image
+              name: image
+              label: Feature Image
+              description: The image displayed above the feature title
+            - type: string
+              name: title
+              label: Feature Title
+              required: true
+            - type: string
+              name: text
+              label: Feature Text
+              description: The test displayed below the feature title
+  hero:
+    type: object
+    label: Medium Hero
+    description: Hero with tweets, file drob, and checklist sections
+    component: Hero
+    fields:
+      - type: string
+        name: heading
+        label: Heading
+        description: The heading displayed at the top of the hero
+        required: true
+      - type: string
+        name: subheading
+        label: Subheading
+        description: The text displayed below the hero heading
+      - type: object
+        name: contact
+        label: Contact Section
+        fields:
+          - type: string
+            name: text
+            label: Contact Text
+          - type: object
+            name: link
+            label: Contact Link
+            description: The link for contacting
+            fields:
+              - type: string
+                name: text
+                label: Link Text
+                description: The text displayed in the link
+                required: true
+              - type: string
+                name: url
+                label: URL
+                widget: url
+                required: true
+      - type: boolean
+        name: displayImage
+        label: Display Contact Image
+        description: Displays the contact image
+        default: false
+      - type: tweets
+        name: tweets
+        label: Tweets Section
+      - type: openFile
+        name: openFile
+        label: Open File Section
+      - type: checklist
+        name: checklist
+        label: Checklist Section
+  checklist:
+    type: object
+    label: Checklist Section
+    component: CheckList
+    fields:
+      - type: list
+        name: listItems
+        label: List Items
+        description: The items displayed in the checklist
+        items:
+          type: object
+          label: List Item
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Item Text
+              description: The text displayed next to the check
+  openFile:
+    type: object
+    label: Open File Section
+    component: OpenFile
+    fields:
+      - type: boolean
+        name: displayDirections
+        label: Display Directions
+        description: Display a set of directions above the file drop section
+        default: false
+      - type: list
+        name: directions
+        label: Directions
+        description: Open file directions
+        items:
+          type: object
+          label: Direction Item
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Text
+              description: The text displayed for the direction item
+              required: true
+  tweets:
+    type: object
+    label: Tweets Section
+    component: Tweets
+    fields:
+      - type: string
+        name: heading
+        label: Section Heading
+        description: The text displayed at the top of the section
+        required: true
+      - type: list
+        name: tweets_carousel
+        label: Tweets Carousel
+        description: A list of code segments to embed tweets into the tweets carousel
+        items:
+          type: object
+          labelField: embed
+          fields:
+            - type: string
+              name: embed
+              labeL: Embeded Tweet Code
+              description: "note: leave the script element off the end of the tweet embed"
+  heroPrimary:
+    type: object
+    label: Hero Header With Image
+    component: HeroPrimary
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the hero
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The subtitle of the hero
+      - type: string
+        name: buttonHref
+        label: ButtonHref
+        description: The href for the button
+      - type: string
+        name: buttonTitle
+        label: ButtonTitle
+        description: The title for the button
+      - type: string
+        name: imageSectionTitle
+        label: Image section title
+        description: The image section title
+      - type: string
+        name: imageSectionImage
+        label: Image section image
+        description: The image section image
+  stackItems:
+    type: object
+    label: Stack items
+    component: StackItems
+    fields:
+      - type: stackLayer
+        name: themeLayer
+      - type: stackLayer
+        name: genLayer
+      - type: stackLayer
+        name: deploymentLayer
+      - type: stackLayer
+        name: cmsLayer
+      - type: object
+        name: ctaLayer
+        fields:
+          - type: string
+            name: quote
+            label: Quote
+            required: true
+          - type: image
+            name: image
+            label: Image
+          - type: string
+            name: name
+            label: Name
+          - type: string
+            name: linkHref
+            label: Link href
+          - type: string
+            name: linkTitle
+            label: Link title
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: subtitle
+            label: Subtitle
+          - type: string
+            name: buttonHref
+            label: button href
+          - type: string
+            name: buttonTitle
+            label: button title
+  stackLayer:
+    type: object
+    label: Stack layer
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the hero
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The subtitle of the hero
+      - type: string
+        name: description
+        label: Description
+        description: The description for the hero
+      - type: image
+        name: icon
+        label: Icon
+        description: The icon for the hero
+      - type: string
+        name: buttonHref
+        label: ButtonHref
+        description: The href for the button
+      - type: string
+        name: buttonTitle
+        label: ButtonTitle
+        description: The title for the button
+  footer:
+    type: object
+    label: Footer
+    component: Footer
+    fields: 
+      - type: string
+        name: copyright
+        label: Copyright
+      - type: list
+        name: links
+        label: Links
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: href
+              label: Href
+            - type: string
+              name: title
+              label: Title
+  header:
+    type: object
+    label: Header
+    component: Header
+    fields:
+      - type: list
+        name: navItems
+        label: NavItems
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: href
+              label: Href
+            - type: string
+              name: title
+              label: Title
+      - type: object
+        name: actionItem
+        label: ActionItem
+        fields:
+          - type: string
+            name: href
+            label: Href
+          - type: string
+            name: title
+            label: Title
+  headerMisc:
+    type: object
+    label: Other Header Options
+    component:  Header
+    fields:
+      - type: image
+        name: backgroundImage
+        label: Background Image
+        description: The background image displayed in the header
+      - type: boolean
+        name: inversed
+        label: Inversed
+        default: false
+        description: Inverses the header colors
+      - type: boolean
+        name: displayAction
+        label: Display Nav Action
+        default: false
+        description: Displays the action link in the nav
+  titleBlock:
+    type: object
+    label: TitleBlock
+    component: TitleBlock
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: Subtitle
+  actionTitleBlock:
+    type: object
+    label: ActionTitleBlock
+    component: ActionTitleBlock
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: Subtitle
+      - type: string
+        name: actionTitle
+        label: Action title
+      - type: string
+        name: actionHref
+        label: Action href
+  twoColumnBlock:
+    type: object
+    label: TwoColumnBlock
+    component: TwoColumnBlock
+    fields:
+      - type: object
+        name: column1
+        label: column1
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: text
+            label: Text
+      - type: object
+        name: column2
+        label: column2
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: text
+            label: Text
+  banner:
+    type: object
+    label: Banner
+    component: Banner
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: items
+        label: Items
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: subtitle
+              label: Subtitle
+            - type: image
+              name: image
+              label: Image
+  jobs:
+    type: object
+    label: Jobs
+    component: Jobs
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: jobs
+        hidden: true
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: location
+              label: Location

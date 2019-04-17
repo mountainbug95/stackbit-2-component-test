@@ -1,0 +1,30 @@
+---
+label: Checklist Section
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: checklist
+    config:
+      required: true
+  - type: field_group_list
+    name: listItems
+    label: List Items
+    description: The items displayed in the checklist
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Item Text
+        description: The text displayed next to the check
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: checklist

@@ -1,0 +1,12 @@
+@mixin ellipsis() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin shimmer() {
+    background: $azure linear-gradient(to right, $azure, lighten($azure, 30) 20%, $azure 40%, $azure 100%) no-repeat;
+    background-size: 800px 100%;
+    position: relative;
+    animation: shimmer 1s linear 0s infinite normal forwards;
+}

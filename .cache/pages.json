@@ -1,0 +1,67 @@
+[
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "beta-4c5",
+        "path": "/beta/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "blog-f7a",
+        "path": "/blog/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "blog-first-post-b22",
+        "path": "/blog/first-post/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "blog-jekyll-vs-hugo-a-full-comparison-3bd",
+        "path": "/blog/jekyll-vs-hugo---a-full-comparison/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "jobs-79a",
+        "path": "/jobs/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "jobs-full-stack-dev-9b1",
+        "path": "/jobs/full-stack-dev/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "license-ae3",
+        "path": "/license/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "medium-c21",
+        "path": "/medium/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "privacy-06e",
+        "path": "/privacy/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "thank-you-a93",
+        "path": "/thank-you/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "tos-607",
+        "path": "/tos/"
+    }
+]

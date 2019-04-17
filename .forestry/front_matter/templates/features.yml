@@ -1,0 +1,58 @@
+---
+label: Features Section
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: features
+    config:
+      required: true
+  - type: text
+    name: heading
+    label: Section Heading
+    description: The large text displayed above the section content
+    config:
+      required: true
+  - type: text
+    name: subheading
+    label: Section Subheading
+    description: The smaller text displayed above the section heading
+  - type: textarea
+    name: content
+    label: Section Content
+    description: The content text displayed below the section heading
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: field_group_list
+    name: featuresList
+    label: Features List
+    description: The list of features displayed at the bottom of the section
+    config:
+      required: true
+      labelField: title
+    fields:
+      - type: file
+        name: image
+        label: Feature Image
+        description: The image displayed above the feature title
+      - type: text
+        name: title
+        label: Feature Title
+        config:
+          required: true
+      - type: text
+        name: text
+        label: Feature Text
+        description: The test displayed below the feature title
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: features

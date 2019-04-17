@@ -1,0 +1,33 @@
+---
+label: blogPostLayout
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Post Title
+    config:
+      required: true
+  - type: textarea
+    name: excerpt
+    label: Post Excerpt
+    description: 'An excerpt of the post, displayed on the post thumbnail'
+  - type: file
+    name: thumbnail
+    label: Post Thumbnail Image
+    description: The image displayed in the post thumbnail
+  - type: number
+    name: readTimeMins
+    label: Estimated Read Time
+    description: The estimated titme (in minutes) it will take toread the post.
+    config:
+      required: true
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: BlogPostLayout
+    config:
+      required: true
+pages:
+  - src/pages/blog/first-post.md
+  - src/pages/blog/jekyll-vs-hugo---a-full-comparison.md

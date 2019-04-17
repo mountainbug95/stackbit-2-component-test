@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="387px" height="189px" viewBox="0 0 387 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>deployment-bg1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="landing-v14" transform="translate(-984.000000, -2552.000000)" fill="#FFA532">
+            <g id="04-deploy" transform="translate(40.000000, 2361.000000)">
+                <g id="art" transform="translate(890.000000, 103.000000)">
+                    <path d="M154.760268,256.10195 C258.855581,298.067256 258.855581,229.849017 324.504018,196.450259 C390.152456,163.051502 369.972768,306.751027 423.246206,267.542771 C476.519643,228.334514 352.999331,34.6847184 261.072768,123.28996 C169.146206,211.895202 178.230581,108.266849 105.996206,108.266849 C33.7618308,108.266849 50.6649558,214.136643 154.760268,256.10195 Z" id="deployment-bg1" transform="translate(249.039228, 187.353110) scale(-1, 1) rotate(-11.000000) translate(-249.039228, -187.353110) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

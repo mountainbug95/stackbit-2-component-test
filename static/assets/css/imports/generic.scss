@@ -1,0 +1,36 @@
+.s-page {
+  padding: 100px 0;
+  box-sizing: border-box;
+
+  h1{
+    font-size: 2em;
+    margin: .67em 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: .75em 0;
+  }
+
+  p {
+    margin: 1em 0;
+    font-weight: $light;
+  }
+
+  ol > ol {
+    list-style-type: lower-latin;
+  }
+
+  li {
+    font-weight: $light;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: $blue;
+    font-weight: $bold;
+  }
+}

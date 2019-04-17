@@ -1,0 +1,25 @@
+---
+label: TitleBlock
+hide_body: true
+is_partial: true
+fields:
+  - type: text
+    name: type
+    label: Type
+    description: The type identifier of this object inside block lists
+    hidden: true
+    default: titleBlock
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: subtitle
+    label: Subtitle
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: Name of the object model if it was referenced
+    hidden: true
+    default: titleBlock
