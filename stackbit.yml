@@ -155,6 +155,11 @@ models:
     label: blogPostLayout
     template: BlogPostLayout
     fields:
+      - type: boolean
+        name: displayPost
+        label: Display Post
+        default: false
+        description: Displays this post in the blogs page
       - type: string
         name: title
         label: Post Title

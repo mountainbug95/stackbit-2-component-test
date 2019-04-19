@@ -21,8 +21,18 @@
     },
     {
         "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "blog-getting-started-with-hugo-24f",
+        "path": "/blog/getting-started-with-hugo/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
         "jsonName": "blog-jekyll-vs-hugo-a-full-comparison-3bd",
         "path": "/blog/jekyll-vs-hugo---a-full-comparison/"
+    },
+    {
+        "componentChunkName": "component---src-templates-page-js",
+        "jsonName": "blog-the-main-reason-why-you-need-to-go-static-af4",
+        "path": "/blog/the-main-reason-why-you-need-to-go-static/"
     },
     {
         "componentChunkName": "component---cache-dev-404-page-js",

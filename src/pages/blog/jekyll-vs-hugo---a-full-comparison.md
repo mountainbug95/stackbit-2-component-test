@@ -1,11 +1,11 @@
 ---
+displayPost: true
 title: Jekyll vs. Hugo - A Full Comparison
 excerpt: >-
   When deciding how to approach a new website, you may be taken back by all the
   options you have. Even if you’ve...
 template: BlogPostLayout
 thumbnail: /images/blogs/thumbnails/jekyll-v-hugo-thumbnail.png
-image: ''
 readTimeMins: 8
 ---
 

@@ -1,4 +1,5 @@
 ---
+displayPost: false
 title: Blog Post the First
 excerpt: >-
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -10,7 +11,6 @@ excerpt: >-
   and more recently with desktop publishing software like Aldus...
 template: BlogPostLayout
 thumbnail: /images/blogs/thumbnails/first-thumbnail.png
-image: ''
 readTimeMins: 9
 ---
 

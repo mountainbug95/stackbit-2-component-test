@@ -18,7 +18,7 @@ class BlogLayout extends Component {
                     backgroundImage={"images/detail-bg.jpg"}
                 />
                 <div className="container s-page">
-                    <h1>Recent Posts</h1>
+                    <h1>Latest Posts</h1>
                     <BlogPosts posts={posts}/>
                     {this.props.children}
                 </div>

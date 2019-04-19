@@ -2,6 +2,11 @@
 label: blogPostLayout
 is_partial: false
 fields:
+  - type: boolean
+    name: displayPost
+    label: Display Post
+    description: Displays this post in the blogs page
+    default: false
   - type: text
     name: title
     label: Post Title
@@ -30,4 +35,6 @@ fields:
       required: true
 pages:
   - src/pages/blog/first-post.md
+  - src/pages/blog/getting-started-with-hugo.md
   - src/pages/blog/jekyll-vs-hugo---a-full-comparison.md
+  - src/pages/blog/the-main-reason-why-you-need-to-go-static.md

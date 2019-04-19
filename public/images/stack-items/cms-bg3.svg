@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="409px" height="276px" viewBox="0 0 409 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>cms-bg3</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
-        <g id="landing-v14" transform="translate(-970.000000, -2007.000000)" fill="#20C778">
-            <g id="03-cms" transform="translate(40.000000, 1817.000000)">
-                <g id="art" transform="translate(881.000000, 76.000000)">
-                    <path d="M71.4359472,377.890625 C170.414608,442.867188 242.568324,194.769531 334.260081,249.738281 C425.951837,304.707031 153.686185,320.589844 227.2404,377.890625 C300.794615,435.191406 571.31072,274.605469 404.685796,146.753906 C238.060872,18.9023437 -27.5427139,312.914063 71.4359472,377.890625 Z" id="cms-bg3"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="276" viewBox="0 0 409 276" width="409" xmlns="http://www.w3.org/2000/svg"><path d="m71.4359472 377.890625c98.9786608 64.976563 171.1323768-183.121094 262.8241338-128.152344 91.691756 54.96875-180.573896 70.851563-107.019681 128.152344s344.07032-103.285156 177.445396-231.136719c-166.624924-127.8515623-432.2285099 166.160157-333.2498488 231.136719z" fill="#20c778" fill-rule="evenodd" opacity=".3" transform="translate(-49 -114)"/></svg>

@@ -4,6 +4,10 @@
         "has_nav": true,
         "navItems": [
             {
+                "href": "/blog/",
+                "title": "Blog"
+            },
+            {
                 "href": "https://app.stackbit.com/",
                 "title": "Log In"
             }

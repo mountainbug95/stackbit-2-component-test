@@ -8,6 +8,9 @@ class BlogPosts extends Component {
 
     singlePost(post) {
         return (
+
+            post.displayPost ?
+
             <div className="post-container">
                 <div className="thumbnail-container">
                     <ResponsiveEmbed>
@@ -18,12 +21,15 @@ class BlogPosts extends Component {
                 </div>
                 <div className="post-info">
                     <div><a href={post.href}><h1>{post.title}</h1></a></div>
-                    <div>{post.excerpt}</div>
+                    <div className="excerpt-container">{post.excerpt}</div>
                     <div className="read-time">
                         <i class="fas fa-eye"></i>{post.readTimeMins} min
                     </div>
                 </div>
             </div>
+
+            : null
+
         );
     }
 
